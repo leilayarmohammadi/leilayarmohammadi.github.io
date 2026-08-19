@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Leila Yarmohammadi, Ph.D. | Electrical Engineering</title>
+
+    <meta name="description"
+          content="Academic website of Dr. Leila Yarmohammadi, researcher in power electronics, wireless power transfer, EV charging and energy systems.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1f2937;
+            background: #ffffff;
+            line-height: 1.7;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 18px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #123b5d;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #374151;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: #123b5d;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #eef5f9, #ffffff);
+            padding: 100px 24px;
+        }
+
+        .hero-container {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            line-height: 1.15;
+            color: #123b5d;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 23px;
+            font-weight: 400;
+            color: #4b5563;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            color: #4b5563;
+            max-width: 700px;
+        }
+
+        .research-tags {
+            margin-top: 28px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-radius: 20px;
+            padding: 7px 14px;
+            font-size: 13px;
+            color: #234b68;
+        }
+
+        .hero-card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 35px;
+            box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08);
+            border: 1px solid #e5e7eb;
+        }
+
+        .hero-card h3 {
+            color: #123b5d;
+            margin-bottom: 18px;
+        }
+
+        .hero-card p {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 24px;
+        }
+
+        .section-title {
+            font-size: 32px;
+            color: #123b5d;
+            margin-bottom: 35px;
+        }
+
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .research-item {
+            padding: 25px;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            background: #ffffff;
+        }
+
+        .research-item h3 {
+            color: #123b5d;
+            margin-bottom: 10px;
+            font-size: 19px;
+        }
+
+        .research-item p {
+            color: #6b7280;
+            font-size: 15px;
+        }
+
+        .about {
+            background: #f8fafc;
+            max-width: none;
+        }
+
+        .about-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 24px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 11px 20px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: 14px;
+            border: 1px solid #123b5d;
+        }
+
+        .button.primary {
+            background: #123b5d;
+            color: #ffffff;
+        }
+
+        .button.secondary {
+            color: #123b5d;
+            background: #ffffff;
+        }
+
+        footer {
+            background: #123b5d;
+            color: #ffffff;
+            text-align: center;
+            padding: 35px 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 800px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .research-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo">Leila Yarmohammadi</div>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="hero-container">
+
+        <div>
+            <h1>Leila Yarmohammadi, Ph.D.</h1>
+
+            <h2>
+                Faculty Member & Researcher in Electrical Engineering
+            </h2>
+
+            <p>
+                Researcher working on power electronics, wireless power transfer,
+                resonant power conversion, electric vehicle charging, and
+                energy management systems.
+            </p>
+
+            <div class="research-tags">
+                <span class="tag">Power Electronics</span>
+                <span class="tag">Wireless Power Transfer</span>
+                <span class="tag">EV Charging</span>
+                <span class="tag">Resonant Converters</span>
+                <span class="tag">Energy Systems</span>
+            </div>
+
+            <div class="buttons">
+                <a class="button primary" href="#research">
+                    Explore Research
+                </a>
+
+                <a class="button secondary" href="#contact">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <h3>Research Focus</h3>
+
+            <p>
+                My research focuses on the development and optimization of
+                efficient power conversion and wireless charging technologies.
+            </p>
+
+            <p>
+                Particular interests include resonant wireless power transfer,
+                compensation networks, EV wireless charging, power electronic
+                converters, and experimental validation.
+            </p>
+        </div>
+
+    </div>
+</header>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <p>
+        I am an Electrical Engineering researcher and faculty member with
+        research experience in power electronics, wireless power transfer,
+        resonant converters, electric vehicle charging, and energy management.
+    </p>
+
+    <p style="margin-top: 18px;">
+        My research combines analytical modeling, simulation, optimization,
+        power electronic design, and experimental investigation of advanced
+        energy conversion systems.
+    </p>
+</section>
+
+<section id="research">
+    <h2 class="section-title">Research Interests</h2>
+
+    <div class="research-grid">
+
+        <div class="research-item">
+            <h3>Wireless Power Transfer</h3>
+            <p>
+                Resonant inductive power transfer, compensation networks,
+                load-independent operation, efficiency optimization,
+                and system analysis.
+            </p>
+        </div>
+
+        <div class="research-item">
+            <h3>Power Electronics</h3>
+            <p>
+                Power electronic converters, resonant conversion,
+                power factor correction, and high-efficiency power conversion.
+            </p>
+        </div>
+
+        <div class="research-item">
+            <h3>EV Wireless Charging</h3>
+            <p>
+                Wireless charging technologies for electric vehicles,
+                magnetic structures, coupling analysis, and charging systems.
+            </p>
+        </div>
+
+        <div class="research-item">
+            <h3>Energy Management</h3>
+            <p>
+                Energy conversion, energy management strategies,
+                and intelligent systems for sustainable electrification.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="publications" class="about">
+    <div class="about-container">
+
+        <h2 class="section-title">Selected Publications</h2>
+
+        <p>
+            A selection of my research publications in wireless power transfer,
+            power electronics, and electric vehicle charging will be presented
+            here.
+        </p>
+
+        <div class="buttons">
+            <a class="button primary"
+               href="https://scholar.google.com/citations?user=FgX3jBAAAAAJ"
+               target="_blank">
+                Google Scholar
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <p>
+        <strong>Email:</strong>
+        <a href="mailto:yarmohammadi.ly@gmail.com">
+            yarmohammadi.ly@gmail.com
+        </a>
+    </p>
+
+    <p style="margin-top: 10px;">
+        <strong>Google Scholar:</strong>
+        <a href="https://scholar.google.com/citations?user=FgX3jBAAAAAJ"
+           target="_blank">
+            Google Scholar Profile
+        </a>
+    </p>
+
+    <p style="margin-top: 10px;">
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/leila-yarmohammadi-phd-707a6553"
+           target="_blank">
+            LinkedIn Profile
+        </a>
+    </p>
+</section>
+
+<footer>
+    © 2026 Leila Yarmohammadi. All rights reserved.
+</footer>
+
+</body>
+</html>
