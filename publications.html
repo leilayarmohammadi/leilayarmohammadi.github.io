@@ -7,7 +7,7 @@
     <title>Publications | Leila Yarmohammadi, Ph.D.</title>
 
     <meta name="description"
-          content="Research publications of Dr. Leila Yarmohammadi in wireless power transfer, power electronics, resonant converters, EV charging and energy systems.">
+          content="Selected publications of Dr. Leila Yarmohammadi in wireless power transfer, power electronics, EV charging, energy management and electrical engineering.">
 
     <style>
         * {
@@ -26,6 +26,8 @@
             background: #ffffff;
             line-height: 1.7;
         }
+
+        /* Navigation */
 
         nav {
             position: sticky;
@@ -66,6 +68,8 @@
             color: #123b5d;
         }
 
+        /* Hero */
+
         .hero {
             background: linear-gradient(135deg, #eef5f9, #ffffff);
             padding: 75px 24px;
@@ -88,10 +92,16 @@
             color: #4b5563;
         }
 
+        /* Main */
+
         main {
             max-width: 1120px;
             margin: auto;
             padding: 70px 24px;
+        }
+
+        .section {
+            margin-bottom: 70px;
         }
 
         .section-title {
@@ -107,39 +117,71 @@
             margin-bottom: 35px;
         }
 
+        /* Publication Cards */
+
         .publication-list {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 22px;
         }
 
         .publication {
             border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            padding: 25px 28px;
+            border-radius: 13px;
+            padding: 27px 30px;
             background: #ffffff;
             transition: 0.2s;
         }
 
         .publication:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.07);
+            box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+        }
+
+        .publication-number {
+            color: #94a3b8;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 5px;
         }
 
         .publication h3 {
             color: #123b5d;
-            font-size: 18px;
-            margin-bottom: 9px;
+            font-size: 19px;
+            line-height: 1.5;
+            margin-bottom: 10px;
         }
 
-        .publication p {
-            color: #6b7280;
+        .authors {
+            color: #374151;
             font-size: 14px;
+            margin-bottom: 7px;
         }
 
-        .status {
-            display: inline-block;
+        .venue {
+            color: #64748b;
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        .doi {
             margin-top: 12px;
+            font-size: 13px;
+        }
+
+        .doi a {
+            color: #123b5d;
+            text-decoration: none;
+            word-break: break-word;
+        }
+
+        .doi a:hover {
+            text-decoration: underline;
+        }
+
+        .tag {
+            display: inline-block;
+            margin-top: 14px;
             padding: 5px 11px;
             border-radius: 15px;
             background: #eef5f9;
@@ -147,17 +189,20 @@
             font-size: 12px;
         }
 
-        .profile-box {
-            margin-top: 55px;
+        /* Scholar Box */
+
+        .scholar-box {
             background: #f8fafc;
-            border-radius: 14px;
-            padding: 40px;
+            border-radius: 15px;
+            padding: 42px;
         }
 
-        .profile-box p {
-            color: #4b5563;
+        .scholar-box p {
             max-width: 850px;
+            color: #4b5563;
         }
+
+        /* Buttons */
 
         .buttons {
             margin-top: 25px;
@@ -185,6 +230,12 @@
             background: #ffffff;
         }
 
+        .button:hover {
+            opacity: 0.9;
+        }
+
+        /* Footer */
+
         footer {
             background: #123b5d;
             color: #ffffff;
@@ -192,6 +243,8 @@
             padding: 32px 20px;
             font-size: 14px;
         }
+
+        /* Mobile */
 
         @media (max-width: 800px) {
 
@@ -210,14 +263,20 @@
                 font-size: 38px;
             }
 
-            .profile-box {
-                padding: 28px 22px;
+            .publication {
+                padding: 23px;
+            }
+
+            .scholar-box {
+                padding: 30px 23px;
             }
         }
     </style>
 </head>
 
 <body>
+
+<!-- Navigation -->
 
 <nav>
     <div class="nav-container">
@@ -250,6 +309,8 @@
 </nav>
 
 
+<!-- Hero -->
+
 <header class="hero">
 
     <div class="hero-container">
@@ -260,8 +321,8 @@
 
         <p>
             Selected research publications in wireless power transfer,
-            power electronics, resonant power conversion, electric vehicle
-            charging, and related energy systems.
+            power electronics, electric vehicle charging, energy management,
+            and related electrical engineering topics.
         </p>
 
     </div>
@@ -271,74 +332,271 @@
 
 <main>
 
-    <section>
+    <!-- Introduction -->
+
+    <section class="section">
 
         <h2 class="section-title">
             Selected Publications
         </h2>
 
         <p class="section-intro">
-            A curated list of research publications will be presented here.
-            The publication list will be organized according to research
-            area and updated as new work is published.
+            The following publications represent selected research work
+            in wireless power transfer, power electronics, electric vehicle
+            charging, intelligent energy management, and related electrical
+            engineering applications.
         </p>
 
 
         <div class="publication-list">
 
 
+            <!-- Publication 1 -->
+
             <article class="publication">
 
+                <div class="publication-number">
+                    01
+                </div>
+
                 <h3>
-                    Wireless Power Transfer
+                    Machine Learning-Driven Energy Management for Critical
+                    Load Prioritization During Extreme Events
                 </h3>
 
-                <p>
-                    Publications related to resonant inductive wireless
-                    power transfer, compensation networks, magnetic
-                    coupling, efficiency optimization, and system analysis.
+                <p class="authors">
+                    L. Yarmohammadi et al.
                 </p>
 
-                <span class="status">
-                    Publication list coming soon
+                <p class="venue">
+                    NAPS 2025
+                </p>
+
+                <span class="tag">
+                    Energy Management · Machine Learning
                 </span>
 
             </article>
 
 
+            <!-- Publication 2 -->
+
             <article class="publication">
 
+                <div class="publication-number">
+                    02
+                </div>
+
                 <h3>
-                    Power Electronics
+                    Analysis of Magnetic Performance of EV Charging Coil
+                    Structures
                 </h3>
 
-                <p>
-                    Research publications related to resonant converters,
-                    power conversion, converter analysis, and
-                    high-efficiency power electronic systems.
+                <p class="authors">
+                    L. Yarmohammadi, A. Siadatan, E. Afjei
                 </p>
 
-                <span class="status">
-                    Publication list coming soon
+                <p class="venue">
+                    SPEEDAM, Italy, 2024 · Oral Presentation
+                </p>
+
+                <span class="tag">
+                    EV Charging · Wireless Power Transfer
                 </span>
 
             </article>
 
 
+            <!-- Publication 3 -->
+
             <article class="publication">
 
+                <div class="publication-number">
+                    03
+                </div>
+
                 <h3>
-                    Electric Vehicle Charging
+                    A Load-Independent Output Current Method for Wireless
+                    Power Transfer Systems with Optimal Parameter Tuning
                 </h3>
 
-                <p>
-                    Research related to wireless charging technologies,
-                    electric vehicle power transfer, magnetic structures,
-                    and charging-system optimization.
+                <p class="authors">
+                    L. Yarmohammadi, S.M.H. Hosseini, J. Olamaei, B. Mozafari
                 </p>
 
-                <span class="status">
-                    Publication list coming soon
+                <p class="venue">
+                    Sustainability, 2022, 14, 9391
+                </p>
+
+                <div class="doi">
+                    DOI:
+                    <a
+                        href="https://doi.org/10.3390/su14159391"
+                        target="_blank"
+                    >
+                        10.3390/su14159391
+                    </a>
+                </div>
+
+                <span class="tag">
+                    Wireless Power Transfer · Resonant Systems
+                </span>
+
+            </article>
+
+
+            <!-- Publication 4 -->
+
+            <article class="publication">
+
+                <div class="publication-number">
+                    04
+                </div>
+
+                <h3>
+                    Maximizing the Efficiency of LCLCL-T Compensated
+                    Wireless Power Transfer Systems with Independent Load
+                    Characteristics for Charging Applications in Smart Home
+                </h3>
+
+                <p class="authors">
+                    L. Yarmohammadi, S.M.H. Hosseini, J. Olamaei, B. Mozafari
+                </p>
+
+                <p class="venue">
+                    Journal of Control (English Edition), 2022,
+                    Vol. 1, Issue 2
+                </p>
+
+                <div class="doi">
+                    DOI:
+                    <a
+                        href="https://doi.org/10.61186/joc.17.3.27"
+                        target="_blank"
+                    >
+                        10.61186/joc.17.3.27
+                    </a>
+                </div>
+
+                <span class="tag">
+                    Wireless Power Transfer · Efficiency Optimization
+                </span>
+
+            </article>
+
+
+            <!-- Publication 5 -->
+
+            <article class="publication">
+
+                <div class="publication-number">
+                    05
+                </div>
+
+                <h3>
+                    Studying Variety of Intelligent Control System Techniques
+                    in Hospitals for Optimization of Energy Consumption
+                </h3>
+
+                <p class="authors">
+                    Hamed Rashidi Aghdam, Leila Yarmohammadi,
+                    Hosein Malakooti
+                </p>
+
+                <p class="venue">
+                    Journal Management System, Vol. 11, Issue 21,
+                    Autumn 2018
+                </p>
+
+                <span class="tag">
+                    Intelligent Control · Energy Management
+                </span>
+
+            </article>
+
+
+            <!-- Publication 6 -->
+
+            <article class="publication">
+
+                <div class="publication-number">
+                    06
+                </div>
+
+                <h3>
+                    Damping of Electromagnetic Disturbances Transient
+                    in HTS Transmission System
+                </h3>
+
+                <p class="authors">
+                    Leila Yarmohammadi, Mohammad Hassan Hosseini
+                </p>
+
+                <p class="venue">
+                    2nd International Conference on Electrical Engineering,
+                    May 2017 · Top Paper
+                </p>
+
+                <span class="tag">
+                    Electromagnetic Systems · Power Transmission
+                </span>
+
+            </article>
+
+
+            <!-- Publication 7 -->
+
+            <article class="publication">
+
+                <div class="publication-number">
+                    07
+                </div>
+
+                <h3>
+                    Structure Novel Boost Topology for Producing High Quality
+                    Supply for HB-LEDs
+                </h3>
+
+                <p class="authors">
+                    L. Yarmohammadi, E. Afjei, A. Siadatan
+                </p>
+
+                <p class="venue">
+                    Research Journal of Recent Sciences,
+                    Vol. 4, Issue 9, August 2015
+                </p>
+
+                <span class="tag">
+                    Power Electronics · LED Power Supply
+                </span>
+
+            </article>
+
+
+            <!-- Publication 8 -->
+
+            <article class="publication">
+
+                <div class="publication-number">
+                    08
+                </div>
+
+                <h3>
+                    Design and Construction of HB-LED Power Supply by Novel
+                    Structure for Achievement of High Power Factor
+                </h3>
+
+                <p class="authors">
+                    L. Yarmohammadi, E. Afjei, A. Siadatan
+                </p>
+
+                <p class="venue">
+                    22nd Iranian Conference on Electrical Engineering (ICEE),
+                    2014
+                </p>
+
+                <span class="tag">
+                    Power Electronics · Power Factor
                 </span>
 
             </article>
@@ -349,16 +607,58 @@
     </section>
 
 
-    <section class="profile-box">
+    <!-- Research Connection -->
+
+    <section class="section">
+
+        <div class="scholar-box">
+
+            <h2 class="section-title">
+                Research Profile
+            </h2>
+
+            <p>
+                My publication record reflects research across wireless power
+                transfer, resonant power conversion, power electronics,
+                electric vehicle charging, intelligent energy management,
+                and related electrical engineering systems.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    class="button primary"
+                    href="https://scholar.google.com/citations?user=FgX3jBAAAAAJ"
+                    target="_blank"
+                >
+                    Google Scholar
+                </a>
+
+                <a
+                    class="button secondary"
+                    href="research.html"
+                >
+                    Research Areas
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Note -->
+
+    <section class="section">
 
         <h2 class="section-title">
-            Google Scholar
+            Complete Publication List
         </h2>
 
-        <p>
-            For the complete and most up-to-date list of publications,
-            citations, and research impact, please visit my Google Scholar
-            profile.
+        <p class="section-intro">
+            Google Scholar contains the complete publication list and the
+            latest citation information.
         </p>
 
         <div class="buttons">
@@ -368,7 +668,7 @@
                 href="https://scholar.google.com/citations?user=FgX3jBAAAAAJ"
                 target="_blank"
             >
-                View Google Scholar
+                View Complete List on Google Scholar
             </a>
 
         </div>
@@ -377,6 +677,8 @@
 
 </main>
 
+
+<!-- Footer -->
 
 <footer>
 
