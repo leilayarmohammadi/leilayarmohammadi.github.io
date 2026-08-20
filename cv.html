@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CV | Leila Yarmohammadi, Ph.D.</title>
+
+    <meta name="description"
+          content="Curriculum Vitae of Dr. Leila Yarmohammadi, Power Electronics Researcher, University Lecturer, and Senior Electrical Engineer.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1f2937;
+            background: #ffffff;
+            line-height: 1.7;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255,255,255,0.97);
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .nav-container {
+            max-width: 1120px;
+            margin: auto;
+            padding: 18px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #123b5d;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #374151;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: #123b5d;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #eef5f9, #ffffff);
+            padding: 70px 24px;
+        }
+
+        .hero-container {
+            max-width: 1120px;
+            margin: auto;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            color: #123b5d;
+            margin-bottom: 12px;
+        }
+
+        .hero h2 {
+            font-size: 21px;
+            font-weight: 400;
+            color: #4b5563;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 850px;
+            color: #4b5563;
+            font-size: 16px;
+        }
+
+        main {
+            max-width: 1120px;
+            margin: auto;
+            padding: 70px 24px;
+        }
+
+        .section {
+            margin-bottom: 70px;
+        }
+
+        .section-title {
+            font-size: 30px;
+            color: #123b5d;
+            margin-bottom: 28px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .section-text {
+            color: #4b5563;
+            max-width: 900px;
+        }
+
+        .timeline {
+            border-left: 3px solid #dbe5ec;
+            padding-left: 28px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 35px;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -37px;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #123b5d;
+        }
+
+        .date {
+            color: #64748b;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item h3 {
+            color: #123b5d;
+            font-size: 19px;
+            margin-bottom: 5px;
+        }
+
+        .institution {
+            color: #374151;
+            font-size: 15px;
+            margin-bottom: 7px;
+        }
+
+        .details {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .contribution-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .contribution {
+            padding: 25px;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            background: #ffffff;
+        }
+
+        .contribution h3 {
+            color: #123b5d;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .contribution p {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .skill-box {
+            padding: 22px;
+            background: #f8fafc;
+            border-radius: 11px;
+            border-left: 4px solid #123b5d;
+        }
+
+        .skill-box h3 {
+            color: #123b5d;
+            font-size: 17px;
+            margin-bottom: 9px;
+        }
+
+        .skill-box p {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .awards {
+            list-style: none;
+        }
+
+        .awards li {
+            margin-bottom: 14px;
+            padding-left: 25px;
+            position: relative;
+            color: #4b5563;
+        }
+
+        .awards li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #123b5d;
+            font-weight: bold;
+        }
+
+        .vision-box {
+            background: #f8fafc;
+            border-radius: 15px;
+            padding: 40px;
+        }
+
+        .vision-box p {
+            max-width: 900px;
+            color: #4b5563;
+        }
+
+        .buttons {
+            margin-top: 28px;
+            display: flex;
+            gap: 13px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 11px 21px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: 14px;
+            border: 1px solid #123b5d;
+        }
+
+        .button.primary {
+            background: #123b5d;
+            color: #ffffff;
+        }
+
+        .button.secondary {
+            color: #123b5d;
+            background: #ffffff;
+        }
+
+        footer {
+            background: #123b5d;
+            color: #ffffff;
+            text-align: center;
+            padding: 32px 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 800px) {
+
+            .nav-container {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 14px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .contribution-grid,
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .vision-box {
+                padding: 28px 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-container">
+
+        <div class="logo">
+            Leila Yarmohammadi
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="research.html">Research</a>
+            </li>
+
+            <li>
+                <a href="publications.html">Publications</a>
+            </li>
+
+            <li>
+                <a href="cv.html">CV</a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
+
+
+<header class="hero">
+
+    <div class="hero-container">
+
+        <h1>
+            Leila Yarmohammadi, Ph.D.
+        </h1>
+
+        <h2>
+            Power Electronics Researcher · University Lecturer · Senior Electrical Engineer
+        </h2>
+
+        <p>
+            Research focus: Intelligent Power Electronics, Wireless Power
+            Transfer, and AI-Driven Energy Systems.
+        </p>
+
+        <div class="buttons">
+
+            <a
+                class="button primary"
+                href="mailto:yarmohammadi.ly@gmail.com"
+            >
+                Contact
+            </a>
+
+            <a
+                class="button secondary"
+                href="publications.html"
+            >
+                Publications
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- Professional Profile -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Professional Profile
+        </h2>
+
+        <p class="section-text">
+            Power Electronics researcher, university lecturer, and senior
+            electrical engineer with expertise in wireless power transfer
+            (WPT), resonant power converters, intelligent energy systems,
+            and smart infrastructure. My research combines analytical
+            modeling, optimization, experimental validation, and engineering
+            implementation to develop efficient and reliable power electronic
+            systems.
+        </p>
+
+    </section>
+
+
+    <!-- Education -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="date">
+                    2017–2023
+                </div>
+
+                <h3>
+                    Ph.D. in Electrical Engineering — Power Electronics
+                </h3>
+
+                <div class="institution">
+                    Islamic Azad University, South Tehran Branch
+                </div>
+
+                <p class="details">
+                    Talented Student Program · GPA: 19.08/20 (4.0/4.0) ·
+                    Top Student
+                </p>
+
+                <p class="details">
+                    Dissertation: Design and Experimental Implementation of
+                    a High-Order Resonant Converter with Load-Independent
+                    Output Current for Wireless Power Transfer Systems.
+                </p>
+
+                <p class="details">
+                    Supervisor: Prof. Javad Olamaei, Senior Member, IEEE
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="date">
+                    2011–2013
+                </div>
+
+                <h3>
+                    M.Sc. in Electrical Engineering — Power
+                </h3>
+
+                <div class="institution">
+                    Islamic Azad University, West Tehran Branch
+                </div>
+
+                <p class="details">
+                    GPA: 18/20 (3.61/4.0) · Top Student
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <h3>
+                    B.Sc. in Electrical Engineering
+                </h3>
+
+                <div class="institution">
+                    Garmsar University
+                </div>
+
+                <p class="details">
+                    Final Project: FPGA-Based Stepper Motor Driver
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Teaching -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Teaching Experience
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="date">
+                    2016–Present
+                </div>
+
+                <h3>
+                    University Lecturer
+                </h3>
+
+                <div class="institution">
+                    Islamic Azad University, South Tehran Branch
+                </div>
+
+                <p class="details">
+                    Courses taught:
+                    Power Electronics · Principles of Electricity ·
+                    Electrical Machines · Electric Circuits ·
+                    Industrial Electronics · Industrial Automation
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Professional Experience -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Professional Experience
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="date">
+                    2004–Present
+                </div>
+
+                <h3>
+                    Head of New Technologies Department
+                </h3>
+
+                <div class="institution">
+                    Commissioning Organization for State & Public Building
+                    Installations (COBI) — Ministry of Roads and Urban Development
+                </div>
+
+                <p class="details">
+                    Supervision of electrical engineering for national
+                    governmental projects; smart building technologies;
+                    Building Information Modeling (BIM); Internet of Things
+                    (IoT) infrastructure; energy auditing based on Iranian
+                    National Building Code (Chapter 19); renewable energy
+                    integration; and technical supervision of hospitals and
+                    strategic public buildings.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="date">
+                    2002–2004
+                </div>
+
+                <h3>
+                    Electrical Engineer — R&D Department
+                </h3>
+
+                <div class="institution">
+                    Tehran Electric Co. — Medical Equipment
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Research Contributions -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Selected Research Contributions
+        </h2>
+
+        <div class="contribution-grid">
+
+            <div class="contribution">
+
+                <h3>
+                    Wireless Power Transfer
+                </h3>
+
+                <p>
+                    Developed a load-independent output current methodology
+                    for wireless power transfer systems.
+                </p>
+
+            </div>
+
+
+            <div class="contribution">
+
+                <h3>
+                    Resonant Converter Design
+                </h3>
+
+                <p>
+                    Designed and experimentally validated a high-order
+                    resonant converter.
+                </p>
+
+            </div>
+
+
+            <div class="contribution">
+
+                <h3>
+                    Optimization
+                </h3>
+
+                <p>
+                    Proposed an optimization criterion based on the
+                    active-to-reactive power ratio for resonant converters.
+                </p>
+
+            </div>
+
+
+            <div class="contribution">
+
+                <h3>
+                    WPT Compensation & Misalignment
+                </h3>
+
+                <p>
+                    Investigated compensation topologies and transformer
+                    misalignment in wireless power transfer systems.
+                </p>
+
+            </div>
+
+
+            <div class="contribution">
+
+                <h3>
+                    Engineering Implementation
+                </h3>
+
+                <p>
+                    Integrated research outcomes with practical engineering
+                    implementation in smart infrastructure projects.
+                </p>
+
+            </div>
+
+
+            <div class="contribution">
+
+                <h3>
+                    Intelligent Energy Systems
+                </h3>
+
+                <p>
+                    Research interests include artificial intelligence,
+                    energy management, resilient energy systems, and
+                    autonomous electric transportation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Honors -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Honors & Awards
+        </h2>
+
+        <ul class="awards">
+
+            <li>
+                Top Researcher Award, Ministry of Roads and Urban Development
+                (2024, 2022, 2014)
+            </li>
+
+            <li>
+                Reviewer, IEEE SPEEDAM 2024
+            </li>
+
+            <li>
+                Best Oral Presentation Award,
+                2nd International Conference on Electrical Engineering (2017)
+            </li>
+
+            <li>
+                Top national rankings in entrance and employment examinations
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- Technical Skills -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Technical Skills
+        </h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-box">
+
+                <h3>
+                    Programming
+                </h3>
+
+                <p>
+                    MATLAB · Python · C++
+                </p>
+
+            </div>
+
+
+            <div class="skill-box">
+
+                <h3>
+                    Simulation
+                </h3>
+
+                <p>
+                    Simulink · PSIM · DigSILENT · ANSYS Maxwell · JMAG
+                </p>
+
+            </div>
+
+
+            <div class="skill-box">
+
+                <h3>
+                    Optimization
+                </h3>
+
+                <p>
+                    GAMS and optimization-based analysis
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Research Metrics -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Research Metrics
+        </h2>
+
+        <div class="contribution-grid">
+
+            <div class="contribution">
+
+                <h3>
+                    Google Scholar
+                </h3>
+
+                <p>
+                    Citations: 18
+                </p>
+
+            </div>
+
+
+            <div class="contribution">
+
+                <h3>
+                    h-index
+                </h3>
+
+                <p>
+                    3
+                </p>
+
+            </div>
+
+
+            <div class="contribution">
+
+                <h3>
+                    ORCID
+                </h3>
+
+                <p>
+                    0000-0002-7284-7054
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Research Vision -->
+
+    <section class="section">
+
+        <div class="vision-box">
+
+            <h2 class="section-title">
+                Research Vision
+            </h2>
+
+            <p>
+                My long-term research vision is to develop intelligent power
+                electronic systems that combine advanced converter technologies
+                with Artificial Intelligence to improve the efficiency,
+                reliability, and resilience of future energy infrastructures.
+                My goal is to contribute to next-generation wireless power
+                transfer, autonomous electric transportation, and smart energy
+                systems through interdisciplinary research that bridges
+                theoretical innovation with practical engineering implementation.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- External Profiles -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Academic Profiles
+        </h2>
+
+        <div class="buttons">
+
+            <a
+                class="button primary"
+                href="https://scholar.google.com/citations?user=FgX3jBAAAAAJ"
+                target="_blank"
+            >
+                Google Scholar
+            </a>
+
+            <a
+                class="button secondary"
+                href="https://orcid.org/0000-0002-7284-7054"
+                target="_blank"
+            >
+                ORCID
+            </a>
+
+            <a
+                class="button secondary"
+                href="https://www.linkedin.com/in/leila-yarmohammadi-phd-707a6553"
+                target="_blank"
+            >
+                LinkedIn
+            </a>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    © 2026 Leila Yarmohammadi · Academic Website
+
+</footer>
+
+</body>
+</html>
