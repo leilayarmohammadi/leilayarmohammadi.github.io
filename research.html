@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Research | Leila Yarmohammadi, Ph.D.</title>
+
+    <meta name="description"
+          content="Research interests of Dr. Leila Yarmohammadi in power electronics, wireless power transfer, resonant converters, EV charging and energy systems.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1f2937;
+            background: #ffffff;
+            line-height: 1.7;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255,255,255,0.97);
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .nav-container {
+            max-width: 1120px;
+            margin: auto;
+            padding: 18px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #123b5d;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #374151;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: #123b5d;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #eef5f9, #ffffff);
+            padding: 75px 24px;
+        }
+
+        .hero-container {
+            max-width: 1120px;
+            margin: auto;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            color: #123b5d;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            max-width: 850px;
+            font-size: 18px;
+            color: #4b5563;
+        }
+
+        main {
+            max-width: 1120px;
+            margin: auto;
+            padding: 70px 24px;
+        }
+
+        .section {
+            margin-bottom: 75px;
+        }
+
+        .section-title {
+            font-size: 30px;
+            color: #123b5d;
+            margin-bottom: 25px;
+        }
+
+        .section-intro {
+            max-width: 900px;
+            color: #4b5563;
+            font-size: 16px;
+        }
+
+        .research-grid {
+            margin-top: 35px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .research-card {
+            padding: 28px;
+            border: 1px solid #e5e7eb;
+            border-radius: 13px;
+            background: #ffffff;
+            transition: 0.2s;
+        }
+
+        .research-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+        }
+
+        .research-card h3 {
+            color: #123b5d;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .research-card p {
+            color: #6b7280;
+            font-size: 15px;
+        }
+
+        .keywords {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .keyword {
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 1px solid #cbd5e1;
+            color: #234b68;
+            font-size: 13px;
+            background: #f8fafc;
+        }
+
+        .highlight-section {
+            background: #f8fafc;
+            padding: 55px;
+            border-radius: 15px;
+        }
+
+        .highlight-list {
+            margin-top: 20px;
+            padding-left: 22px;
+            color: #4b5563;
+        }
+
+        .highlight-list li {
+            margin-bottom: 10px;
+        }
+
+        .future-grid {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .future-item {
+            padding: 22px;
+            background: #f8fafc;
+            border-radius: 11px;
+            border-left: 4px solid #123b5d;
+        }
+
+        .future-item h3 {
+            color: #123b5d;
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .future-item p {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            gap: 13px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 11px 21px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: 14px;
+            border: 1px solid #123b5d;
+        }
+
+        .button.primary {
+            background: #123b5d;
+            color: #ffffff;
+        }
+
+        .button.secondary {
+            color: #123b5d;
+            background: #ffffff;
+        }
+
+        footer {
+            background: #123b5d;
+            color: #ffffff;
+            text-align: center;
+            padding: 32px 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 800px) {
+
+            .nav-container {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 14px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .research-grid,
+            .future-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .highlight-section {
+                padding: 30px 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-container">
+
+        <div class="logo">
+            Leila Yarmohammadi
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="index.html#publications">Publications</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+
+<header class="hero">
+
+    <div class="hero-container">
+
+        <h1>Research</h1>
+
+        <p>
+            My research interests focus on advanced power conversion,
+            wireless power transfer, resonant power electronics,
+            electric vehicle charging, and energy systems.
+        </p>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- Research Overview -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Research Overview
+        </h2>
+
+        <p class="section-intro">
+            My research combines analytical modeling, simulation,
+            power electronic design, optimization, and experimental
+            investigation of advanced electrical energy conversion systems.
+            A particular focus is placed on high-efficiency power transfer,
+            resonant conversion, and technologies supporting electrified
+            transportation.
+        </p>
+
+    </section>
+
+
+    <!-- Main Research Areas -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Research Areas
+        </h2>
+
+        <div class="research-grid">
+
+            <div class="research-card">
+
+                <h3>
+                    Wireless Power Transfer
+                </h3>
+
+                <p>
+                    Research on resonant inductive wireless power transfer,
+                    magnetic coupling, compensation networks, system
+                    modeling, efficiency optimization, and robust power
+                    transfer under practical operating conditions.
+                </p>
+
+            </div>
+
+
+            <div class="research-card">
+
+                <h3>
+                    Power Electronics
+                </h3>
+
+                <p>
+                    Research involving power electronic converters,
+                    resonant power conversion, converter analysis,
+                    control strategies, and high-efficiency electrical
+                    energy conversion.
+                </p>
+
+            </div>
+
+
+            <div class="research-card">
+
+                <h3>
+                    Electric Vehicle Charging
+                </h3>
+
+                <p>
+                    Investigation of charging technologies for electric
+                    vehicles, including wireless charging architectures,
+                    power conversion stages, magnetic coupling, and
+                    system-level efficiency.
+                </p>
+
+            </div>
+
+
+            <div class="research-card">
+
+                <h3>
+                    Resonant Power Conversion
+                </h3>
+
+                <p>
+                    Analysis and design of resonant converters and
+                    resonant compensation networks for efficient
+                    power conversion and wireless energy transfer.
+                </p>
+
+            </div>
+
+
+            <div class="research-card">
+
+                <h3>
+                    Energy Systems
+                </h3>
+
+                <p>
+                    Advanced energy conversion and management approaches
+                    for efficient and sustainable electrical energy systems.
+                </p>
+
+            </div>
+
+
+            <div class="research-card">
+
+                <h3>
+                    Modeling, Simulation & Optimization
+                </h3>
+
+                <p>
+                    Analytical modeling, numerical simulation, parameter
+                    optimization, performance evaluation, and comparison
+                    of advanced electrical and power electronic systems.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Research Keywords -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Research Keywords
+        </h2>
+
+        <div class="keywords">
+
+            <span class="keyword">
+                Wireless Power Transfer
+            </span>
+
+            <span class="keyword">
+                Resonant Inductive Coupling
+            </span>
+
+            <span class="keyword">
+                Power Electronics
+            </span>
+
+            <span class="keyword">
+                Resonant Converters
+            </span>
+
+            <span class="keyword">
+                EV Charging
+            </span>
+
+            <span class="keyword">
+                Compensation Networks
+            </span>
+
+            <span class="keyword">
+                Magnetic Coupling
+            </span>
+
+            <span class="keyword">
+                Efficiency Optimization
+            </span>
+
+            <span class="keyword">
+                Energy Conversion
+            </span>
+
+            <span class="keyword">
+                Energy Management
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- Research Strengths -->
+
+    <section class="section">
+
+        <div class="highlight-section">
+
+            <h2 class="section-title">
+                Research Approach
+            </h2>
+
+            <ul class="highlight-list">
+
+                <li>
+                    Analytical modeling and mathematical analysis of
+                    power electronic and wireless power transfer systems.
+                </li>
+
+                <li>
+                    Electromagnetic and circuit-level simulation for
+                    system evaluation and optimization.
+                </li>
+
+                <li>
+                    Design and optimization of resonant power conversion
+                    and compensation networks.
+                </li>
+
+                <li>
+                    Performance evaluation based on efficiency, power
+                    transfer capability, system robustness, and operating
+                    conditions.
+                </li>
+
+                <li>
+                    Experimental investigation and validation of
+                    electrical energy conversion systems.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- Future Research -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Future Research Directions
+        </h2>
+
+        <p class="section-intro">
+            Potential directions for future research and collaboration
+            include the development of efficient and robust wireless
+            charging technologies and advanced power electronic systems
+            for electrified transportation and sustainable energy systems.
+        </p>
+
+        <div class="future-grid">
+
+            <div class="future-item">
+
+                <h3>
+                    EV Wireless Charging
+                </h3>
+
+                <p>
+                    High-efficiency wireless charging architectures
+                    and robust operation under practical conditions.
+                </p>
+
+            </div>
+
+
+            <div class="future-item">
+
+                <h3>
+                    Advanced WPT Systems
+                </h3>
+
+                <p>
+                    Resonant architectures, compensation methods,
+                    coupling enhancement, and system optimization.
+                </p>
+
+            </div>
+
+
+            <div class="future-item">
+
+                <h3>
+                    High-Efficiency Power Conversion
+                </h3>
+
+                <p>
+                    Advanced converter topologies and efficient
+                    energy conversion for modern electrical systems.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Collaboration -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Research Collaboration
+        </h2>
+
+        <p class="section-intro">
+            I am interested in research collaborations in wireless power
+            transfer, power electronics, electric vehicle charging,
+            resonant power conversion, and related electrical energy
+            systems.
+        </p>
+
+        <div class="buttons">
+
+            <a
+                class="button primary"
+                href="mailto:yarmohammadi.ly@gmail.com"
+            >
+                Contact for Collaboration
+            </a>
+
+            <a
+                class="button secondary"
+                href="https://scholar.google.com/citations?user=FgX3jBAAAAAJ"
+                target="_blank"
+            >
+                Google Scholar
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    © 2026 Leila Yarmohammadi · Academic Website
+
+</footer>
+
+</body>
+</html>
