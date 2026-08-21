@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Research | Leila Yarmohammadi, Ph.D.</title>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Research | Dr. Leila Yarmohammadi
+    </title>
 
     <meta name="description"
-          content="Research interests of Dr. Leila Yarmohammadi in power electronics, wireless power transfer, resonant converters, EV charging and energy systems.">
+          content="Research profile of Dr. Leila Yarmohammadi in Wireless Power Transfer, Power Electronics, Resonant Converters, EV Charging, and Intelligent Energy Systems.">
 
     <style>
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -21,276 +28,857 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #1f2937;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            color: #243447;
             background: #ffffff;
             line-height: 1.7;
         }
 
+        a {
+            color: inherit;
+        }
+
+        .container {
+            width: min(1120px, 92%);
+            margin: 0 auto;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================== */
+
         nav {
             position: sticky;
             top: 0;
-            z-index: 100;
-            background: rgba(255,255,255,0.97);
-            border-bottom: 1px solid #e5e7eb;
+            z-index: 1000;
+
+            background: rgba(255,255,255,0.96);
+
+            border-bottom:
+                1px solid #e8edf2;
+
+            backdrop-filter: blur(10px);
         }
 
-        .nav-container {
-            max-width: 1120px;
-            margin: auto;
-            padding: 18px 24px;
+        .nav-inner {
+            min-height: 72px;
+
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
+
+            gap: 30px;
         }
 
         .logo {
-            font-size: 20px;
+            text-decoration: none;
+
+            font-size: 19px;
             font-weight: 700;
+
             color: #123b5d;
+
+            white-space: nowrap;
         }
 
         .nav-links {
             display: flex;
-            gap: 25px;
+            align-items: center;
+
+            gap: 28px;
+
             list-style: none;
         }
 
         .nav-links a {
             text-decoration: none;
-            color: #374151;
+
             font-size: 14px;
+            font-weight: 500;
+
+            color: #536273;
+
+            transition: color 0.2s ease;
         }
 
         .nav-links a:hover {
             color: #123b5d;
         }
 
-        .hero {
-            background: linear-gradient(135deg, #eef5f9, #ffffff);
-            padding: 75px 24px;
+
+        /* =========================
+           PAGE HERO
+        ========================== */
+
+        .page-hero {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f3f8fb 0%,
+                    #ffffff 75%
+                );
+
+            padding:
+                82px 0
+                78px;
         }
 
-        .hero-container {
-            max-width: 1120px;
-            margin: auto;
+        .eyebrow {
+
+            display: inline-block;
+
+            margin-bottom: 15px;
+
+            color: #66859a;
+
+            font-size: 12px;
+            font-weight: 700;
+
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
         }
 
-        .hero h1 {
-            font-size: 46px;
+        .page-hero h1 {
+
             color: #123b5d;
-            margin-bottom: 18px;
+
+            font-size:
+                clamp(42px, 5vw, 58px);
+
+            line-height: 1.1;
+
+            margin-bottom: 20px;
         }
 
-        .hero p {
-            max-width: 850px;
-            font-size: 18px;
-            color: #4b5563;
-        }
+        .page-hero p {
 
-        main {
-            max-width: 1120px;
-            margin: auto;
-            padding: 70px 24px;
-        }
+            max-width: 790px;
 
-        .section {
-            margin-bottom: 75px;
-        }
+            color: #5f6d79;
 
-        .section-title {
-            font-size: 30px;
-            color: #123b5d;
-            margin-bottom: 25px;
-        }
-
-        .section-intro {
-            max-width: 900px;
-            color: #4b5563;
-            font-size: 16px;
-        }
-
-        .research-grid {
-            margin-top: 35px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 24px;
-        }
-
-        .research-card {
-            padding: 28px;
-            border: 1px solid #e5e7eb;
-            border-radius: 13px;
-            background: #ffffff;
-            transition: 0.2s;
-        }
-
-        .research-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
-        }
-
-        .research-card h3 {
-            color: #123b5d;
-            font-size: 20px;
-            margin-bottom: 12px;
-        }
-
-        .research-card p {
-            color: #6b7280;
-            font-size: 15px;
-        }
-
-        .keywords {
-            margin-top: 30px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .keyword {
-            padding: 8px 15px;
-            border-radius: 20px;
-            border: 1px solid #cbd5e1;
-            color: #234b68;
-            font-size: 13px;
-            background: #f8fafc;
-        }
-
-        .highlight-section {
-            background: #f8fafc;
-            padding: 55px;
-            border-radius: 15px;
-        }
-
-        .highlight-list {
-            margin-top: 20px;
-            padding-left: 22px;
-            color: #4b5563;
-        }
-
-        .highlight-list li {
-            margin-bottom: 10px;
-        }
-
-        .future-grid {
-            margin-top: 30px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .future-item {
-            padding: 22px;
-            background: #f8fafc;
-            border-radius: 11px;
-            border-left: 4px solid #123b5d;
-        }
-
-        .future-item h3 {
-            color: #123b5d;
             font-size: 17px;
+        }
+
+
+        /* =========================
+           SECTIONS
+        ========================== */
+
+        section {
+            padding: 78px 0;
+        }
+
+        .section-header {
+
+            max-width: 800px;
+
+            margin-bottom: 38px;
+        }
+
+        .section-kicker {
+
+            color: #66859a;
+
+            font-size: 12px;
+            font-weight: 700;
+
+            letter-spacing: 1.1px;
+
+            text-transform: uppercase;
+
             margin-bottom: 8px;
         }
 
-        .future-item p {
-            color: #6b7280;
-            font-size: 14px;
-        }
+        .section-title {
 
-        .buttons {
-            margin-top: 30px;
-            display: flex;
-            gap: 13px;
-            flex-wrap: wrap;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 11px 21px;
-            border-radius: 7px;
-            text-decoration: none;
-            font-size: 14px;
-            border: 1px solid #123b5d;
-        }
-
-        .button.primary {
-            background: #123b5d;
-            color: #ffffff;
-        }
-
-        .button.secondary {
             color: #123b5d;
+
+            font-size: 33px;
+
+            line-height: 1.25;
+
+            margin-bottom: 14px;
+        }
+
+        .section-intro {
+
+            color: #65727e;
+
+            font-size: 16px;
+        }
+
+
+        /* =========================
+           RESEARCH PROFILE
+        ========================== */
+
+        .profile-section {
             background: #ffffff;
         }
 
-        footer {
-            background: #123b5d;
-            color: #ffffff;
-            text-align: center;
-            padding: 32px 20px;
+        .profile-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1.35fr
+                0.85fr;
+
+            gap: 65px;
+
+            align-items: start;
+        }
+
+        .profile-text p {
+
+            color: #596774;
+
+            font-size: 16px;
+
+            margin-bottom: 18px;
+        }
+
+        .profile-highlights {
+
+            display: grid;
+
+            gap: 14px;
+        }
+
+        .highlight {
+
+            padding: 20px 22px;
+
+            background: #f8fafc;
+
+            border:
+                1px solid #e5ebf0;
+
+            border-radius: 11px;
+        }
+
+        .highlight-label {
+
+            display: block;
+
+            color: #81909d;
+
+            font-size: 12px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.8px;
+
+            margin-bottom: 3px;
+        }
+
+        .highlight-value {
+
+            color: #123b5d;
+
+            font-size: 15px;
+
+            font-weight: 600;
+        }
+
+
+        /* =========================
+           CORE RESEARCH AREAS
+        ========================== */
+
+        .areas-section {
+            background: #f8fafc;
+        }
+
+        .areas-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 20px;
+        }
+
+        .area-card {
+
+            padding: 30px;
+
+            background: #ffffff;
+
+            border:
+                1px solid #e5ebf0;
+
+            border-radius: 14px;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .area-card:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 12px 28px
+                rgba(18,59,93,0.08);
+        }
+
+        .area-number {
+
+            color: #91a9b9;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            margin-bottom: 12px;
+        }
+
+        .area-card h3 {
+
+            color: #123b5d;
+
+            font-size: 21px;
+
+            margin-bottom: 11px;
+        }
+
+        .area-card p {
+
+            color: #65727e;
+
             font-size: 14px;
         }
 
-        @media (max-width: 800px) {
 
-            .nav-container {
+        /* =========================
+           FEATURED RESEARCH
+        ========================== */
+
+        .featured-section {
+            background: #ffffff;
+        }
+
+        .featured-box {
+
+            padding: 45px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f2f7fa,
+                    #fbfcfd
+                );
+
+            border:
+                1px solid #e1e9ef;
+
+            border-radius: 18px;
+        }
+
+        .featured-box h3 {
+
+            color: #123b5d;
+
+            font-size: 28px;
+
+            line-height: 1.35;
+
+            margin-bottom: 17px;
+        }
+
+        .featured-box > p {
+
+            max-width: 850px;
+
+            color: #5d6b77;
+
+            font-size: 15px;
+
+            margin-bottom: 25px;
+        }
+
+        .research-details {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 18px;
+
+            margin-top: 25px;
+        }
+
+        .detail {
+
+            padding: 20px;
+
+            background: #ffffff;
+
+            border:
+                1px solid #e5ebf0;
+
+            border-radius: 10px;
+        }
+
+        .detail h4 {
+
+            color: #123b5d;
+
+            font-size: 16px;
+
+            margin-bottom: 7px;
+        }
+
+        .detail p {
+
+            color: #697681;
+
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           METHODOLOGY
+        ========================== */
+
+        .method-section {
+            background: #f8fafc;
+        }
+
+        .method-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 18px;
+        }
+
+        .method-card {
+
+            padding: 25px 20px;
+
+            background: #ffffff;
+
+            border:
+                1px solid #e5ebf0;
+
+            border-radius: 12px;
+
+            text-align: center;
+        }
+
+        .method-card h3 {
+
+            color: #123b5d;
+
+            font-size: 17px;
+
+            margin-bottom: 8px;
+        }
+
+        .method-card p {
+
+            color: #6a7782;
+
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           APPLICATIONS
+        ========================== */
+
+        .applications-section {
+            background: #ffffff;
+        }
+
+        .applications-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+        .application-card {
+
+            padding: 28px;
+
+            border:
+                1px solid #e5ebf0;
+
+            border-radius: 14px;
+
+            background: #ffffff;
+        }
+
+        .application-card h3 {
+
+            color: #123b5d;
+
+            font-size: 19px;
+
+            margin-bottom: 10px;
+        }
+
+        .application-card p {
+
+            color: #65727e;
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           FUTURE DIRECTIONS
+        ========================== */
+
+        .future-section {
+            background: #f8fafc;
+        }
+
+        .future-box {
+
+            max-width: 900px;
+
+            padding: 38px;
+
+            background: #ffffff;
+
+            border:
+                1px solid #e5ebf0;
+
+            border-radius: 15px;
+        }
+
+        .future-box p {
+
+            color: #5f6c78;
+
+            font-size: 15px;
+
+            margin-bottom: 20px;
+        }
+
+        .future-list {
+
+            list-style: none;
+        }
+
+        .future-list li {
+
+            position: relative;
+
+            padding-left: 23px;
+
+            margin-bottom: 10px;
+
+            color: #596774;
+
+            font-size: 14px;
+        }
+
+        .future-list li::before {
+
+            content: "→";
+
+            position: absolute;
+
+            left: 0;
+
+            color: #567f99;
+
+            font-weight: 700;
+        }
+
+
+        /* =========================
+           COLLABORATION
+        ========================== */
+
+        .collaboration-section {
+
+            background: #ffffff;
+
+            text-align: center;
+        }
+
+        .collaboration-content {
+
+            max-width: 750px;
+
+            margin: 0 auto;
+        }
+
+        .collaboration-content h2 {
+
+            color: #123b5d;
+
+            font-size: 34px;
+
+            margin-bottom: 15px;
+        }
+
+        .collaboration-content p {
+
+            color: #687681;
+
+            font-size: 16px;
+
+            margin-bottom: 25px;
+        }
+
+        .buttons {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+        .btn {
+
+            display: inline-block;
+
+            padding:
+                12px 21px;
+
+            border-radius: 7px;
+
+            text-decoration: none;
+
+            font-size: 14px;
+        }
+
+        .btn-primary {
+
+            background: #123b5d;
+
+            color: #ffffff;
+        }
+
+        .btn-secondary {
+
+            background: #ffffff;
+
+            color: #123b5d;
+
+            border:
+                1px solid #cad7e1;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+
+            padding: 28px 20px;
+
+            background: #123b5d;
+
+            color: #dce8ef;
+
+            text-align: center;
+
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 900px) {
+
+            .profile-grid {
+
+                grid-template-columns: 1fr;
+
+                gap: 35px;
+            }
+
+            .method-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .applications-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .nav-inner {
+
                 flex-direction: column;
-                gap: 12px;
+
+                padding:
+                    15px 0;
             }
 
             .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
+
                 gap: 14px;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
             }
 
-            .hero h1 {
-                font-size: 38px;
+            .page-hero {
+
+                padding:
+                    65px 0;
             }
 
-            .research-grid,
-            .future-grid {
-                grid-template-columns: 1fr;
+            section {
+
+                padding:
+                    62px 0;
             }
 
-            .highlight-section {
-                padding: 30px 24px;
+            .areas-grid {
+
+                grid-template-columns:
+                    1fr;
             }
+
+            .research-details {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .method-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .featured-box {
+
+                padding:
+                    28px 22px;
+            }
+
+            .future-box {
+
+                padding:
+                    28px 22px;
+            }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
-<nav>
-    <div class="nav-container">
 
-        <div class="logo">
+<!-- =========================
+     NAVIGATION
+========================== -->
+
+<nav>
+
+    <div class="container nav-inner">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
             Leila Yarmohammadi
-        </div>
+        </a>
 
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="index.html#publications">Publications</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    Research
+                </a>
+            </li>
+
+            <li>
+                <a href="publications.html">
+                    Publications
+                </a>
+            </li>
+
+            <li>
+                <a href="cv.html">
+                    CV
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">
+                    Contact
+                </a>
+            </li>
+
         </ul>
 
     </div>
+
 </nav>
 
 
-<header class="hero">
+<!-- =========================
+     PAGE HERO
+========================== -->
 
-    <div class="hero-container">
+<header class="page-hero">
 
-        <h1>Research</h1>
+    <div class="container">
+
+        <span class="eyebrow">
+            Research Profile
+        </span>
+
+        <h1>
+            Research
+        </h1>
 
         <p>
-            My research interests focus on advanced power conversion,
-            wireless power transfer, resonant power electronics,
-            electric vehicle charging, and energy systems.
+            My research focuses on advanced power electronics,
+            wireless power transfer, resonant power conversion,
+            electric vehicle charging, and intelligent energy systems.
         </p>
 
     </div>
@@ -298,341 +886,662 @@
 </header>
 
 
-<main>
+<!-- =========================
+     RESEARCH PROFILE
+========================== -->
 
-    <!-- Research Overview -->
+<section class="profile-section">
 
-    <section class="section">
-
-        <h2 class="section-title">
-            Research Overview
-        </h2>
-
-        <p class="section-intro">
-            My research combines analytical modeling, simulation,
-            power electronic design, optimization, and experimental
-            investigation of advanced electrical energy conversion systems.
-            A particular focus is placed on high-efficiency power transfer,
-            resonant conversion, and technologies supporting electrified
-            transportation.
-        </p>
-
-    </section>
+    <div class="container profile-grid">
 
 
-    <!-- Main Research Areas -->
+        <div class="profile-text">
 
-    <section class="section">
+            <div class="section-header">
 
-        <h2 class="section-title">
-            Research Areas
-        </h2>
+                <div class="section-kicker">
+                    Research Perspective
+                </div>
 
-        <div class="research-grid">
+                <h2 class="section-title">
+                    From Power Conversion to Wireless Energy Systems
+                </h2>
 
-            <div class="research-card">
+            </div>
+
+
+            <p>
+
+                My research in power electronics is centered on the
+                analysis, design, optimization, and experimental
+                validation of advanced power conversion systems.
+
+            </p>
+
+
+            <p>
+
+                A major focus of my doctoral research was the design
+                and experimental implementation of a high-order
+                resonant converter with load-independent output
+                current for wireless power transfer systems.
+
+            </p>
+
+
+            <p>
+
+                My broader research interests extend to wireless
+                charging technologies, resonant converters,
+                electric vehicle charging, intelligent energy
+                management, and the integration of advanced power
+                electronic technologies with smart energy
+                infrastructures.
+
+            </p>
+
+        </div>
+
+
+        <div class="profile-highlights">
+
+
+            <div class="highlight">
+
+                <span class="highlight-label">
+                    Core Discipline
+                </span>
+
+                <span class="highlight-value">
+                    Power Electronics
+                </span>
+
+            </div>
+
+
+            <div class="highlight">
+
+                <span class="highlight-label">
+                    Primary Research
+                </span>
+
+                <span class="highlight-value">
+                    Wireless Power Transfer
+                </span>
+
+            </div>
+
+
+            <div class="highlight">
+
+                <span class="highlight-label">
+                    Converter Focus
+                </span>
+
+                <span class="highlight-value">
+                    Resonant & High-Order Converters
+                </span>
+
+            </div>
+
+
+            <div class="highlight">
+
+                <span class="highlight-label">
+                    Validation
+                </span>
+
+                <span class="highlight-value">
+                    Simulation & Experimental Implementation
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CORE RESEARCH AREAS
+========================== -->
+
+<section class="areas-section">
+
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <div class="section-kicker">
+                Core Areas
+            </div>
+
+            <h2 class="section-title">
+                Research Areas
+            </h2>
+
+            <p class="section-intro">
+                Research themes that connect advanced power conversion
+                with wireless energy transfer and future electric
+                transportation systems.
+            </p>
+
+        </div>
+
+
+        <div class="areas-grid">
+
+
+            <article class="area-card">
+
+                <div class="area-number">
+                    01
+                </div>
 
                 <h3>
                     Wireless Power Transfer
                 </h3>
 
                 <p>
-                    Research on resonant inductive wireless power transfer,
-                    magnetic coupling, compensation networks, system
-                    modeling, efficiency optimization, and robust power
-                    transfer under practical operating conditions.
+                    Resonant wireless power transfer systems,
+                    compensation structures, load-independent
+                    operation, efficiency, and system performance.
                 </p>
 
-            </div>
+            </article>
 
 
-            <div class="research-card">
+            <article class="area-card">
+
+                <div class="area-number">
+                    02
+                </div>
 
                 <h3>
-                    Power Electronics
+                    Resonant Power Converters
                 </h3>
 
                 <p>
-                    Research involving power electronic converters,
-                    resonant power conversion, converter analysis,
-                    control strategies, and high-efficiency electrical
-                    energy conversion.
+                    High-order resonant converter topologies,
+                    analytical modeling, parameter selection,
+                    compensation networks, and power conversion.
                 </p>
 
-            </div>
+            </article>
 
 
-            <div class="research-card">
+            <article class="area-card">
 
-                <h3>
-                    Electric Vehicle Charging
-                </h3>
-
-                <p>
-                    Investigation of charging technologies for electric
-                    vehicles, including wireless charging architectures,
-                    power conversion stages, magnetic coupling, and
-                    system-level efficiency.
-                </p>
-
-            </div>
-
-
-            <div class="research-card">
-
-                <h3>
-                    Resonant Power Conversion
-                </h3>
-
-                <p>
-                    Analysis and design of resonant converters and
-                    resonant compensation networks for efficient
-                    power conversion and wireless energy transfer.
-                </p>
-
-            </div>
-
-
-            <div class="research-card">
-
-                <h3>
-                    Energy Systems
-                </h3>
-
-                <p>
-                    Advanced energy conversion and management approaches
-                    for efficient and sustainable electrical energy systems.
-                </p>
-
-            </div>
-
-
-            <div class="research-card">
-
-                <h3>
-                    Modeling, Simulation & Optimization
-                </h3>
-
-                <p>
-                    Analytical modeling, numerical simulation, parameter
-                    optimization, performance evaluation, and comparison
-                    of advanced electrical and power electronic systems.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Research Keywords -->
-
-    <section class="section">
-
-        <h2 class="section-title">
-            Research Keywords
-        </h2>
-
-        <div class="keywords">
-
-            <span class="keyword">
-                Wireless Power Transfer
-            </span>
-
-            <span class="keyword">
-                Resonant Inductive Coupling
-            </span>
-
-            <span class="keyword">
-                Power Electronics
-            </span>
-
-            <span class="keyword">
-                Resonant Converters
-            </span>
-
-            <span class="keyword">
-                EV Charging
-            </span>
-
-            <span class="keyword">
-                Compensation Networks
-            </span>
-
-            <span class="keyword">
-                Magnetic Coupling
-            </span>
-
-            <span class="keyword">
-                Efficiency Optimization
-            </span>
-
-            <span class="keyword">
-                Energy Conversion
-            </span>
-
-            <span class="keyword">
-                Energy Management
-            </span>
-
-        </div>
-
-    </section>
-
-
-    <!-- Research Strengths -->
-
-    <section class="section">
-
-        <div class="highlight-section">
-
-            <h2 class="section-title">
-                Research Approach
-            </h2>
-
-            <ul class="highlight-list">
-
-                <li>
-                    Analytical modeling and mathematical analysis of
-                    power electronic and wireless power transfer systems.
-                </li>
-
-                <li>
-                    Electromagnetic and circuit-level simulation for
-                    system evaluation and optimization.
-                </li>
-
-                <li>
-                    Design and optimization of resonant power conversion
-                    and compensation networks.
-                </li>
-
-                <li>
-                    Performance evaluation based on efficiency, power
-                    transfer capability, system robustness, and operating
-                    conditions.
-                </li>
-
-                <li>
-                    Experimental investigation and validation of
-                    electrical energy conversion systems.
-                </li>
-
-            </ul>
-
-        </div>
-
-    </section>
-
-
-    <!-- Future Research -->
-
-    <section class="section">
-
-        <h2 class="section-title">
-            Future Research Directions
-        </h2>
-
-        <p class="section-intro">
-            Potential directions for future research and collaboration
-            include the development of efficient and robust wireless
-            charging technologies and advanced power electronic systems
-            for electrified transportation and sustainable energy systems.
-        </p>
-
-        <div class="future-grid">
-
-            <div class="future-item">
+                <div class="area-number">
+                    03
+                </div>
 
                 <h3>
                     EV Wireless Charging
                 </h3>
 
                 <p>
-                    High-efficiency wireless charging architectures
-                    and robust operation under practical conditions.
+                    Wireless charging technologies for electric
+                    vehicles, charging coil structures, magnetic
+                    performance, and charging-system development.
                 </p>
 
-            </div>
+            </article>
 
 
-            <div class="future-item">
+            <article class="area-card">
+
+                <div class="area-number">
+                    04
+                </div>
 
                 <h3>
-                    Advanced WPT Systems
+                    Intelligent Energy Systems
                 </h3>
 
                 <p>
-                    Resonant architectures, compensation methods,
-                    coupling enhancement, and system optimization.
+                    AI-driven energy management, resilient energy
+                    systems, smart infrastructure, and autonomous
+                    electric transportation.
                 </p>
 
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FEATURED RESEARCH
+========================== -->
+
+<section class="featured-section">
+
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <div class="section-kicker">
+                Featured Research
             </div>
 
+            <h2 class="section-title">
+                Wireless Power Transfer & Resonant Conversion
+            </h2>
 
-            <div class="future-item">
+        </div>
 
-                <h3>
-                    High-Efficiency Power Conversion
-                </h3>
 
-                <p>
-                    Advanced converter topologies and efficient
-                    energy conversion for modern electrical systems.
-                </p>
+        <div class="featured-box">
+
+            <h3>
+                High-Order Resonant Converter with
+                Load-Independent Output Current
+            </h3>
+
+            <p>
+
+                My Ph.D. dissertation investigated the design and
+                experimental implementation of a high-order resonant
+                converter for wireless power transfer systems, with
+                emphasis on achieving load-independent output current
+                characteristics.
+
+            </p>
+
+
+            <div class="research-details">
+
+
+                <div class="detail">
+
+                    <h4>
+                        Converter Design
+                    </h4>
+
+                    <p>
+                        Development and analysis of a high-order
+                        resonant power converter topology for WPT
+                        applications.
+                    </p>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <h4>
+                        Analytical Modeling
+                    </h4>
+
+                    <p>
+                        Mathematical analysis of converter behavior,
+                        operating characteristics, and system
+                        parameters.
+                    </p>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <h4>
+                        Optimization
+                    </h4>
+
+                    <p>
+                        Investigation of parameter selection and
+                        optimization strategies for improved
+                        converter performance.
+                    </p>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <h4>
+                        Experimental Validation
+                    </h4>
+
+                    <p>
+                        Experimental implementation and validation
+                        of the proposed power conversion approach.
+                    </p>
+
+                </div>
+
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- Collaboration -->
+<!-- =========================
+     RESEARCH METHODOLOGY
+========================== -->
 
-    <section class="section">
+<section class="method-section">
 
-        <h2 class="section-title">
-            Research Collaboration
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <div class="section-kicker">
+                Methodology
+            </div>
+
+            <h2 class="section-title">
+                Research Approach
+            </h2>
+
+            <p class="section-intro">
+                I combine theoretical analysis with simulation,
+                optimization, and experimental validation.
+            </p>
+
+        </div>
+
+
+        <div class="method-grid">
+
+
+            <div class="method-card">
+
+                <h3>
+                    Analytical Modeling
+                </h3>
+
+                <p>
+                    Mathematical modeling and theoretical analysis
+                    of power electronic systems.
+                </p>
+
+            </div>
+
+
+            <div class="method-card">
+
+                <h3>
+                    Simulation
+                </h3>
+
+                <p>
+                    Simulation-based evaluation of converter and
+                    wireless power transfer performance.
+                </p>
+
+            </div>
+
+
+            <div class="method-card">
+
+                <h3>
+                    Optimization
+                </h3>
+
+                <p>
+                    Parameter optimization and performance-oriented
+                    system design.
+                </p>
+
+            </div>
+
+
+            <div class="method-card">
+
+                <h3>
+                    Experiment
+                </h3>
+
+                <p>
+                    Experimental implementation and validation
+                    of proposed approaches.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     APPLICATIONS
+========================== -->
+
+<section class="applications-section">
+
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <div class="section-kicker">
+                Applications
+            </div>
+
+            <h2 class="section-title">
+                Research Applications
+            </h2>
+
+            <p class="section-intro">
+                Potential application domains for advanced power
+                electronic and wireless energy technologies.
+            </p>
+
+        </div>
+
+
+        <div class="applications-grid">
+
+
+            <article class="application-card">
+
+                <h3>
+                    Electric Vehicles
+                </h3>
+
+                <p>
+                    Wireless charging technologies and advanced
+                    power conversion systems for electric
+                    transportation.
+                </p>
+
+            </article>
+
+
+            <article class="application-card">
+
+                <h3>
+                    Smart Energy Infrastructure
+                </h3>
+
+                <p>
+                    Integration of intelligent energy technologies
+                    with smart buildings and resilient energy
+                    infrastructures.
+                </p>
+
+            </article>
+
+
+            <article class="application-card">
+
+                <h3>
+                    Autonomous Electric Transportation
+                </h3>
+
+                <p>
+                    Future-oriented energy and charging technologies
+                    for autonomous and electrified transportation.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FUTURE DIRECTIONS
+========================== -->
+
+<section class="future-section">
+
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <div class="section-kicker">
+                Future Directions
+            </div>
+
+            <h2 class="section-title">
+                Future Research
+            </h2>
+
+        </div>
+
+
+        <div class="future-box">
+
+            <p>
+
+                My long-term research vision is to contribute to
+                intelligent power electronic systems that combine
+                advanced power conversion technologies with
+                emerging computational and energy-management
+                approaches.
+
+            </p>
+
+
+            <ul class="future-list">
+
+                <li>
+                    Advanced wireless power transfer systems
+                </li>
+
+                <li>
+                    Efficient resonant power conversion
+                </li>
+
+                <li>
+                    Wireless charging for electric transportation
+                </li>
+
+                <li>
+                    AI-assisted energy management and optimization
+                </li>
+
+                <li>
+                    Resilient and intelligent energy infrastructures
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     COLLABORATION
+========================== -->
+
+<section class="collaboration-section">
+
+    <div class="container collaboration-content">
+
+
+        <div class="section-kicker">
+            Collaboration
+        </div>
+
+
+        <h2>
+            Interested in Research Collaboration?
         </h2>
 
-        <p class="section-intro">
-            I am interested in research collaborations in wireless power
-            transfer, power electronics, electric vehicle charging,
-            resonant power conversion, and related electrical energy
-            systems.
+
+        <p>
+
+            I am interested in research collaborations and
+            opportunities in power electronics, wireless power
+            transfer, resonant converters, EV charging, and
+            intelligent energy systems.
+
         </p>
+
 
         <div class="buttons">
 
             <a
-                class="button primary"
-                href="mailto:yarmohammadi.ly@gmail.com"
+                href="publications.html"
+                class="btn btn-primary"
             >
-                Contact for Collaboration
+                View Publications
             </a>
 
             <a
-                class="button secondary"
-                href="https://scholar.google.com/citations?user=FgX3jBAAAAAJ"
-                target="_blank"
+                href="cv.html"
+                class="btn btn-secondary"
             >
-                Google Scholar
+                View CV
+            </a>
+
+            <a
+                href="index.html#contact"
+                class="btn btn-secondary"
+            >
+                Contact
             </a>
 
         </div>
 
-    </section>
 
-</main>
+    </div>
 
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
 
 <footer>
 
-    © 2026 Leila Yarmohammadi · Academic Website
+    © 2026 Dr. Leila Yarmohammadi
+    · Electrical Engineering · Power Electronics
 
 </footer>
 
+
 </body>
+
 </html>
